@@ -1,6 +1,10 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+import GenerateButton from './GenerateButton';
 
-export default function Home() {
-  return <main>Hello world</main>;
+export default function HomePage() {
+  return (
+    <main>
+      <GenerateButton />
+      <h1>Welcome to the jungle of senses</h1>
+    </main>
+  );
 }
