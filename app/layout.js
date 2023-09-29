@@ -1,5 +1,6 @@
-import './globals.css';
+import './globals.scss';
 import { Inter } from 'next/font/google';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,12 +18,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <nav>
-          <a href="/">Home</a>
-          <a href="/gin">Saneha Gin</a>
-          <a href="/shaker">Boston shaker set</a>
-          <a href="/glass">Highball glass set</a>
-          <a href="/course">Cocktail course</a>
+          <div>
+            <Link href="/">Home</Link>
+            <Link href="/gin">Saneha Gin</Link>
+            <Link href="/shaker">Boston shaker set</Link>
+            <Link href="/glass">Highball glass set</Link>
+            <Link href="/course">Cocktail course</Link>
+          </div>
+          {Math.floor(Math.random() * 10)}
         </nav>
+
         {children}
       </body>
     </html>

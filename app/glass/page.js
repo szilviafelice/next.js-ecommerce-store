@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Art deco set',
   description:
@@ -5,5 +7,16 @@ export const metadata = {
 };
 
 export default function HighballPage() {
-  return <div>Vintage Art Deco</div>;
+  return (
+    <div>
+      <h1>Vintage Art Deco Highball Glasses</h1>
+      <p>Vintage Art Deco 1920s' | Set of 4 </p>
+      <Image
+        src="/highballglasses.webp"
+        alt="highballglasses"
+        width={650}
+        height={490}
+      />
+    </div>
+  );
 }

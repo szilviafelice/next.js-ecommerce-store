@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Course',
   description:
@@ -5,5 +7,10 @@ export const metadata = {
 };
 
 export default function CoursePage() {
-  return <div>Cocktail course</div>;
+  return (
+    <div>
+      <h1>Cocktail course</h1>
+      <Image src="/course.jpeg" alt="coctailcourse" width={650} height={490} />
+    </div>
+  );
 }

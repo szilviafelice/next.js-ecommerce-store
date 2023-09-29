@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Shaker set',
   description:
@@ -5,5 +7,15 @@ export const metadata = {
 };
 
 export default function ShakerPage() {
-  return <div>Rose gold Boston shaker set</div>;
+  return (
+    <div>
+      <h1>Rose gold Boston shaker set</h1>
+      <Image
+        src="/bostonshaker.webp"
+        alt="bostonshaker"
+        width={650}
+        height={650}
+      />
+    </div>
+  );
 }

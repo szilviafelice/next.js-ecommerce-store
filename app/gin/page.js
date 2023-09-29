@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Saneha gin',
   description:
@@ -5,5 +7,15 @@ export const metadata = {
 };
 
 export default function sanehaGin() {
-  return <div>Saneha Gin</div>;
+  return (
+    <div>
+      <h1>Saneha Gin</h1>
+      <Image
+        src="/sanehabottle.jpeg"
+        alt="sanehabottle"
+        width={650}
+        height={410}
+      />
+    </div>
+  );
 }
