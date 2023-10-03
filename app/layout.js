@@ -20,10 +20,9 @@ export default function RootLayout({ children }) {
         <nav>
           <div>
             <Link href="/">Home</Link>
-            <Link href="/gin">Saneha Gin</Link>
-            <Link href="/shaker">Boston shaker set</Link>
-            <Link href="/glass">Highball glass set</Link>
-            <Link href="/course">Cocktail course</Link>
+            <Link href="/about">About</Link>
+            <Link href="/products">Products</Link>
+            <Link href="/cart">Cart</Link>
           </div>
           {Math.floor(Math.random() * 10)}
         </nav>

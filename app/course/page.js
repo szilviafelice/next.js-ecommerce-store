@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+// import styles from './/sharedStyles.module.scss';
+
 export const metadata = {
   title: 'Course',
   description:
