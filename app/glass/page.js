@@ -12,7 +12,7 @@ export default function HighballPage() {
       <h1>Vintage Art Deco Highball Glasses</h1>
       <p>Vintage Art Deco 1920s' | Set of 4 </p>
       <Image
-        src="/highballglasses.webp"
+        src="/glass.jpg"
         alt="highballglasses"
         width={650}
         height={490}

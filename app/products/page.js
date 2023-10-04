@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getProducts } from '../../database/products.js';
 
 export const metadata = {
   title: 'Products',
@@ -7,14 +8,8 @@ export const metadata = {
     'Welcome to Saneha, where the finest ingredients of Thailand blend gracefully with local tradition, symbolism, culture and values.',
 };
 
-const products = [
-  { id: 'gin', name: 'Saneha Gin' },
-  { id: 'shaker', name: 'Boston Shaker Set' },
-  { id: 'glass', name: 'Highball Glass Set' },
-  { id: 'course', name: 'Cocktail course' },
-];
-
 export default function ProductsPage() {
+  const products = getProducts();
   return (
     <main>
       <h1>Our Products</h1>
@@ -24,7 +19,6 @@ export default function ProductsPage() {
           <div key={`product-${product.id}`}>
             <Link href={product.id}>{product.name}</Link>
             <Image
-              // eslint-disable-next-line no-template-curly-in-string
               src={`/${product.id}.jpg`}
               alt={product.name}
               width={300}

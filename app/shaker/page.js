@@ -11,7 +11,7 @@ export default function ShakerPage() {
     <div>
       <h1>Rose gold Boston shaker set</h1>
       <Image
-        src="/bostonshaker.webp"
+        src="/shaker.webp"
         alt="bostonshaker"
         width={650}
         height={650}
