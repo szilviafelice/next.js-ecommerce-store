@@ -12,19 +12,21 @@ export default function ProductsPage() {
   const products = getProducts();
   return (
     <main>
-      <h1>Our Products</h1>
+      <h1 data-test-id="products-link">Our products</h1>
 
       {products.map((product) => {
         return (
-          <div key={`product-${product.id}`}>
-            <Link href={product.id}>{product.name}</Link>
+        <Link href={`/product/${product.id}`} passHref>
+          <div data-test-id={`product-${product.id}`}>
+          {product.name}
             <Image
-              src={`/${product.id}.jpg`}
-              alt={product.name}
-              width={300}
-              height={200}
+            src={`/${product.id}.jpg`}
+            alt={product.name}
+            width={300}
+            height={200}
             />
           </div>
+        </Link>
         );
       })}
     </main>

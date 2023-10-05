@@ -1,3 +1,5 @@
-export default function SanehaPage() {
-  return <div>Saneha gin</div>;
+export default function ProductPage(props) {
+
+  console.log('check: , props');
+  return <div>Products</div>;
 }

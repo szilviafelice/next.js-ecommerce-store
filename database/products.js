@@ -1,3 +1,5 @@
+import 'server-only';
+
 const products = [
   { id: 'gin', name: 'Saneha Gin' },
   { id: 'shaker', name: 'Boston Shaker Set' },

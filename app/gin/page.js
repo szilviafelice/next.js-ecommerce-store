@@ -11,7 +11,7 @@ export default function sanehaGin() {
     <div>
       <h1>Saneha Gin</h1>
       <Image
-        src="/gin.jpeg"
+        src="/gin.jpg"
         alt="sanehabottle"
         width={650}
         height={410}

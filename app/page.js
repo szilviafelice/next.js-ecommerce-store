@@ -7,7 +7,8 @@ export default function HomePage() {
     <main>
       <h1>Welcome to the jungle of senses</h1>
 
-      <Image src="/plants.jpg" alt="plants" width={650} height={410} />
+      <Image src="/plants.jpg" alt="plants" width={1000} height={853} />
+
 
       <GenerateButton />
     </main>

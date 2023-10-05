@@ -12,7 +12,7 @@ export default function CoursePage() {
   return (
     <div>
       <h1>Cocktail course</h1>
-      <Image src="/course.jpeg" alt="coctailcourse" width={650} height={490} />
+      <Image src="/course.jpg" alt="coctailcourse" width={650} height={490} />
     </div>
   );
 }
